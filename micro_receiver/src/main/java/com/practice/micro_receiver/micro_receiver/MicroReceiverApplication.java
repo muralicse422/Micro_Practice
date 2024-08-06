@@ -2,6 +2,8 @@ package com.practice.micro_receiver.micro_receiver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class MicroReceiverApplication {
@@ -10,4 +12,9 @@ public class MicroReceiverApplication {
 		SpringApplication.run(MicroReceiverApplication.class, args);
 	}
 
+}
+
+@Bean
+public RestTemplate getRestTemplate(){
+	return new RestTemplate();
 }
