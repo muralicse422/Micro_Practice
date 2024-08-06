@@ -8,8 +8,8 @@ public class Micro_Receiver {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "t_generator")
-    @SequenceGenerator(name ="t_generator", allocationSize = 50, sequenceName = "TABLE_SEQUENCE", initialValue = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "r_generator")
+    @SequenceGenerator(name ="r_generator", allocationSize = 50, sequenceName = "RECEI_SEQUENCE", initialValue = 1)
     private long id;
     private String message;
     @Column(name ="receiver_date")

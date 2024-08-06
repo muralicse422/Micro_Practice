@@ -12,9 +12,10 @@ public class MicroReceiverApplication {
 		SpringApplication.run(MicroReceiverApplication.class, args);
 	}
 
+	@Bean
+	public RestTemplate getRestTemplate(){
+		return new RestTemplate();
+	}
 }
 
-@Bean
-public RestTemplate getRestTemplate(){
-	return new RestTemplate();
-}
+
